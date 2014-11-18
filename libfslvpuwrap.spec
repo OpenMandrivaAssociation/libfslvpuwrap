@@ -13,6 +13,7 @@ Group:		System/Libraries
 URL:		http://www.freescale.com
 Source0:	%{name}-%{version}.tar.xz
 Patch0:		libfslvpuwrap-0001-vpu_wrapper-fix-tests-of-return-value-from-IOGetVirt.patch
+BuildRequires:	libvpu-devel
 ExclusiveArch:	armv7hl armv7hnl
 
 %description
