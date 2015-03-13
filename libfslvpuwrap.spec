@@ -4,15 +4,14 @@
 
 Summary:	Freescale VPUwrap library
 Name:		libfslvpuwrap
-Version:	1.0.46	
+Version:	1.0.57
 Release:	1
 License:	Proprietary
 Group:		System/Libraries
 # downloaded and repackaged from:
 # http://www.freescale.com/lgfiles/NMG/MAD/YOCTO/libfslvpuwrap-1.0.46.bin
 URL:		http://www.freescale.com
-Source0:	%{name}-%{version}.tar.xz
-Patch0:		libfslvpuwrap-0001-vpu_wrapper-fix-tests-of-return-value-from-IOGetVirt.patch
+Source0:	http://www.freescale.com/lgfiles/NMG/MAD/YOCTO/%{name}-%{version}.tar.xz
 BuildRequires:	libvpu-devel
 ExclusiveArch:	armv7hl armv7hnl
 
@@ -36,9 +35,11 @@ Development files for Freescale VPUwrap library.
 
 %prep
 %setup -q
-%patch0 -p1 -b .IOGetVirt~
+%apply_patches
 
 %build
+autoreconf -fiv
+libtoolize --copy --force
 %configure
 %make
 
