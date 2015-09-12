@@ -5,7 +5,7 @@
 Summary:	Freescale VPUwrap library
 Name:		libfslvpuwrap
 Version:	1.0.57
-Release:	1
+Release:	2
 License:	Proprietary
 Group:		System/Libraries
 # downloaded and repackaged from:
