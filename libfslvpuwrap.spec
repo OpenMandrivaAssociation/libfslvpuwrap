@@ -35,7 +35,7 @@ Development files for Freescale VPUwrap library.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 autoreconf -fiv
