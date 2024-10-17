@@ -10,7 +10,7 @@ License:	Proprietary
 Group:		System/Libraries
 # downloaded and repackaged from:
 # http://www.freescale.com/lgfiles/NMG/MAD/YOCTO/libfslvpuwrap-1.0.46.bin
-URL:		http://www.freescale.com
+URL:		https://www.freescale.com
 Source0:	http://www.freescale.com/lgfiles/NMG/MAD/YOCTO/%{name}-%{version}.tar.xz
 BuildRequires:	libvpu-devel
 ExclusiveArch:	armv7hl armv7hnl
